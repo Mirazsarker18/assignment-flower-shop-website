@@ -19,17 +19,25 @@ img{
     width: 1200px;
     margin: 0 auto;
 }
-.title{
+.title-h1{
     font-size: 62px;
     color: #272727;
     font-weight: 800;
+}
+.primary{
+    color:#E55473;
+}
+.title-h2{
+    font-size: 34px;
+    color: #272727;
+    font-weight: 700;
 }
 .paragraph{
     color: rgba(39, 39, 39, 0.60);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 24px;
 }
 .btn{
     padding: 15px 25px;
@@ -43,8 +51,14 @@ img{
 /* ------ Common ----- css---- end------- */
 /* ------ nav ----- css---- start------- */
 #nav-main{
-    height: 60px;
-    background: #00ffff;
+    height: 70px;
+    background: #058a91d8;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999999;
+    box-shadow: 2px 2px 4px #908e8e;
 }
 .nav-container-row{
     display: flex;
@@ -55,7 +69,7 @@ img{
     display: flex;
     align-items: center;
     gap: 5px;
-    margin-top: 15px;
+    margin-top: 19px;
 }
 .logo-img{
     width: 200px;
@@ -70,7 +84,7 @@ img{
 .nav-menu li a{
     font-size: 20px;
     font-weight: 600;
-    color: #000000;
+    color: #ffffff;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -85,14 +99,13 @@ img{
 /* ------ nav ----- css---- end------- */
 /* ------ Banner ----- css---- start------- */
 #banner-section{
-    padding: 110px 0;
+    padding: 200px 0 140px 0;
     background: rgba(229, 84, 115, 0.102);
     position: relative;
 }
 .banner-row{
     display: flex;
     justify-content: space-between;
-    position: relative;
 }
 .banner-img{
     width: 100%;
@@ -100,29 +113,268 @@ img{
 .banner-col{
     display: flex;
     align-items: center;
+    width: 700px;
 }
 .banner-dec{
-    width: 50%;
+    width: 80%;
     margin: 25px 0;
 }
-.banner-col-img{
-    position: absolute;
-    bottom: -110px;
-    right: 20px;
-    width: 40%;
+.banner-position-img{
+    position: relative;
 }
-
-
+.banner-col-img{
+    width: 500px;
+    margin-bottom: -140px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
 /* ------ Banner ----- css---- end------- */
 
-/* ------  ----- css---- start------- */
-/* ------  ----- css---- end------- */
-
-/* ------  ----- css---- start------- */
-/* ------  ----- css---- end------- */
-
-/* ------  ----- css---- start------- */
-/* ------  ----- css---- end------- */
-
-/* ------  ----- css---- start------- */
-/* ------  ----- css---- end------- */
+/* ------ Our Featured Flowers ----- css---- start------- */
+#featured-section-id{
+    padding: 90px 0;
+}
+.featured-container-text-row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.featured-p-dec{
+    width: 60%;
+    margin: auto;
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 22px;
+}
+.featured-container-box-row{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 55px;
+}
+.featured-container-box-col{
+    width: 380px;
+    height: 550px;
+    
+}
+.featured-box-img{
+    display: flex;
+    justify-content: center;
+    width: 380px;
+    height: 480px;
+    background: rgba(167, 33, 98, 0.15);
+    border-radius: 200px 200px 0 0;
+}
+.featured-img{
+    width: 95%;
+}
+.featured-img-box-one{
+    margin-top: 73px;
+}
+.featured-img-box-two{
+    margin-top: 100px;
+    margin-left: 30px;
+}
+.featured-img-box-three{
+    margin-top: 33px;
+}
+.featured-img-bg-two{
+    background: rgba(5, 151, 160, 0.15);
+}
+.featured-img-bg-three{
+    background: rgba(71, 125, 17, 0.15);
+}
+.featured-box-text{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+/* ------ Our Featured Flowers ----- css---- end------- */
+/* ------ Delivery ----- css---- start------- */
+.delivery-bg{
+    background: rgba(39, 39, 39, 0.05);
+    border-radius: 8px;
+    padding: 70px 0;
+}
+.delivery-container-row{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.delivery-dec-text{
+    color: rgba(39, 39, 39, 0.80);
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+/* ------ Delivery ----- css---- end------- */
+/* ------ Hot Deal offer ----- css---- start------- */
+#offer-section-id{
+    padding: 60px 0;
+    background: rgba(229, 84, 115, 0.05);
+    margin-top: 120px;
+}
+.offer-container-col{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.offer-col-text{
+    width: 60%;
+    text-align: center;
+}
+.offer-col-img{
+    width: 40%;
+    margin-left: 150px;
+}
+.offer-p-dec{
+    width: 90%;
+    margin: auto;
+}
+.offer-margin{
+    margin-bottom: 20px;
+}
+.btn-margin{
+    margin-top: 20px;
+}
+/* ------ Hot Deal offer ----- css---- end------- */
+/* ------ Instagram ----- css---- start------- */
+#instagram-id{
+    padding: 60px 0;
+}
+.instagram-text-row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.instagram-img-col{
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.instagram-img{
+    width: 100%;
+    border-radius: 3px;
+}
+.instagram-p-dec{
+    width: 60%;
+    margin: auto;
+}
+.instagram-h2-text{
+    margin-bottom: 20px;
+}
+/* ------ Instagram ----- css---- end------- */
+/* ------ our services ----- css---- start------- */
+#services-id-section{
+    padding: 50px 0;
+}
+.our-Services-container-col{
+    text-align: center;
+}
+.our-services-box-row{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 60px 0 20px 0;
+}
+.our-services-col-box{
+    width: 350px;
+    height: 480px;
+    box-shadow: 4px 5px 8px #7d7b7b;
+    border-radius: 8px;
+}
+.our-img{
+    width: 100%;
+    border-radius: 15px 15px 4px 4px;
+    box-shadow: 3px 3px 4px #908e8e;
+}
+.our-services-tex-col{
+    padding: 18px;
+}
+.our-text-heading{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.our-text-decip{
+    font-size: 16px;
+    color: #000000;
+}
+.our-btn{
+    font-size: 16px;
+    padding: 10px 15px;
+    margin-top: 18px;
+    
+}
+.our-btn a{
+    color: #fff;
+}
+/* ------ our services ----- css---- end------- */
+/* ------ Email ----- css---- start------- */
+#email-id-main{
+    padding: 50px 0;
+}
+.email-main-container{
+    background-image: url("../asset/Get-bg.png"), linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 90px 0;
+    border-radius: 5px;
+}
+.email-container-row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.email-form-col input[type="email"] {
+    width: 500px;
+    height: 26px;
+    margin-bottom: 10px;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 15px;
+    margin-top: -3px;
+}
+.email-dec{
+    margin: 15px 0;
+    color: #000000;
+}
+.email-form-col{
+    margin-top: 40px;
+}
+/* ------ Email ----- css---- end------- */
+/* ------ footer  ----- css---- start------- */
+#footer-id-section{
+    padding: 90px 0;
+    background: #111010;
+}
+.footer-container-row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.footer-dec{
+    width: 60%;
+    margin: auto;
+    line-height: 24px;
+    color: #ffffff;
+}
+.footer-container-col h2{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-copy-col{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.footer-copy-col p{
+    color: #ffffff;
+    margin-top: 90px;
+}
+/* ------ footer  ----- css---- end------- */
